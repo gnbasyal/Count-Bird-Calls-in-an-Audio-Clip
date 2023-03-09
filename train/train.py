@@ -99,9 +99,9 @@ def makePredictions(path):
     
 
 if __name__ == "__main__":
-    # filepaths, labels = getFilepathsAndLabels()
-    # specs_and_labels = getSpectrogramsAndLabels(filepaths, labels)
-    # X_train, Y_train, X_test, Y_test = getTrainAndTestData(specs_and_labels)
-    # model = getModel()
-    # trainModel(model, X_train, Y_train, X_test, Y_test)
+    filepaths, labels = getFilepathsAndLabels()
+    specs_and_labels = getSpectrogramsAndLabels(filepaths, labels)
+    X_train, Y_train, X_test, Y_test = getTrainAndTestData(specs_and_labels)
+    model = getModel()
+    trainModel(model, X_train, Y_train, X_test, Y_test)
     print(makePredictions(r"D:\Ganesh\Count Bird Calls\data\Parsed_Not_Capuchinbird_Clips\crickets-chirping-crickets-sound-27.wav"))
